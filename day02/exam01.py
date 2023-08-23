@@ -55,6 +55,9 @@ for d in iter(data):
     print(d, end=' ')
 print()
 
+for index, d in enumerate(data, start=100):
+    print(f'[{index}] : {d}')
+
 for i in range(1, len(data)+1):
     print(data[-i], end=' ')
 print()
@@ -83,3 +86,4 @@ data = [10, 20, 30]
 # data.clear()
 del data[:]
 print(data)
+
