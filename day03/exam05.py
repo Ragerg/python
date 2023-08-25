@@ -24,6 +24,7 @@ if members.get(id) != password:
 
 newPassword = input('변경하실 패스워드를 입력하세요: ')
 members.update({id:newPassword})
+# members[id] = newPassword
 
 print('< 전체 회원 목록 >')
 print('아이디\t패스워드')
