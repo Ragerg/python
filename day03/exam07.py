@@ -3,13 +3,9 @@
 num1, num2 = input('정수 2개 입력하세요 : ').split()
 
 if num1 < num2:
-    temp = num1
-    num1 = num2
-    num2 = temp
+    num1, num2 = num2, num1
 
 while(num2):
-    a = int(num1) % int(num2)
-    num1 = num2
-    num2 = a
+    num1, num2 = num2, int(num1) % int(num2)
 
 print(f'최대공약수 : {num1}')
