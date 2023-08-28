@@ -27,4 +27,4 @@ def calculate(a, b):
 print(f'사칙연산 : {calculate(12, 7)}')
 
 # unpacking
-a, b, c, d = line = calculate(12, 7)
+a, b, c, d = calculate(12, 7)
