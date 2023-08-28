@@ -8,3 +8,4 @@ divisor = [n for n in divNum if n in divNum2]
 print(divNum)
 print(divNum2)
 print(f'{num}, {num2}의 최대 공약수 : {max(divisor)}')
+print(f'{num}, {num2}의 최대 공약수 : {max(set(divNum) & set(divNum2))}')
